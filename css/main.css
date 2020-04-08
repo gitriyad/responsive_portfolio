@@ -167,7 +167,7 @@ nav {
     width: 500px;
     margin-left: 54%;
     margin-top: -2%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Pacifico', cursive;
     background: -webkit-gradient(linear, left top, right top, color-stop(10%, cyan), color-stop(teal), color-stop(40%, cyan));
     background: linear-gradient(to right, cyan 10%, teal, cyan 40%);
