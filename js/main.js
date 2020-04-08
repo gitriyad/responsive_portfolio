@@ -128,7 +128,7 @@ if (body_height >= 720 && body_height < 1070) {
     propics.style.marginTop = "38px";
     des_h1.style.fontSize = "2.3em";
     des_h1.style.lineHeight = "50vh";
-    name_h1.style.fontSize = "2rem";
+    name_h1.style.fontSize = "1rem";
     name_h1.style.marginLeft = "38%";
     var calc_item = Math.ceil(item / 2);
     var active_height = (calc_item * 279) + (31 * calc_item) + 60;
@@ -223,7 +223,7 @@ window.addEventListener("resize", function () {
         propics.style.marginTop = "38px";
         des_h1.style.fontSize = "2.3em";
         des_h1.style.lineHeight = "50vh";
-        name_h1.style.fontSize = "2rem";
+        name_h1.style.fontSize = "1rem";
         name_h1.style.marginLeft = "38%";
         var calc_item = Math.ceil(item / 2);
         var active_height = (calc_item * 279) + (31 * calc_item) + 60;
