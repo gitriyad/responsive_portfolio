@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*nav design*/
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(88, 42, 114, 0.7)), to(rgba(38, 3, 57, 0.7)));
+    background: linear-gradient(to right, rgba(88, 42, 114, 0.7), rgba(38, 3, 57, 0.7));
+    width: 100%;
+    height: 10vh;
+    -webkit-box-shadow: 0 10px 10px 1px #260339;
+    box-shadow: 0 10px 10px 1px #260339, 0px -10px 15px 1px white inset;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navlinks {
+    line-height: 10vh;
+}
+
+.navlinks > a {
+    text-decoration: none;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-style: italic;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.navlinks > a:hover {
+    color: orange;
+    text-shadow: 0 0 5px black;
+}
+
+.brand > img {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.brandspan {
+    position: relative;
+    display: inline-block;
+    top: -44%;
+}
+
+.push {
+    margin-left: auto;
+}
+
+/*about desing*/
+#about {
+    position: relative;
+    top: 12vh;
+    height: 50vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 110px;
+    overflow: hidden;
+}
+
+.sectionheader {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+
+
+#left {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(44, 2, 56, 0.5)), to(rgba(13, 74, 77, 0.5))), url(https://images.unsplash.com/photo-1585457288697-180e55c12dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background: linear-gradient(to right, rgba(44, 2, 56, 0.5), rgba(13, 74, 77, 0.5)), url(https://images.unsplash.com/photo-1585457288697-180e55c12dbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #AA5585;
+    -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+    height: 50vh;
+    width: 50%;
+    top: 0;
+    left: -100%;
+    -webkit-animation-name: lefts;
+    animation-name: lefts;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+#left > h1 {
+    margin: 0 auto 0 1%;
+    font-size: 3.8em;
+    font-family: 'Lobster', cursive;
+    height: 100%;
+    line-height: 50vh;
+
+
+}
+
+#text {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(194, 207, 104, 0.9)), color-stop(rgba(110, 164, 152, 0.9)), to(rgba(160, 113, 167, 0.9)));
+    background: linear-gradient(to right, rgba(194, 207, 104, 0.9), rgba(110, 164, 152, 0.9), rgba(160, 113, 167, 0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#right {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 55, 43, 0.5)), to(rgba(49, 1, 56, 0.5))), url(https://images.unsplash.com/photo-1483748231602-246e5b99359e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+    background: linear-gradient(to right, rgba(0, 55, 43, 0.5), rgba(49, 1, 56, 0.5)), url(https://images.unsplash.com/photo-1483748231602-246e5b99359e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    top: 0;
+    right: -100%;
+    height: 50vh;
+    width: 50%;
+    -webkit-animation: rights .8s ease-in-out;
+    animation: rights .8s ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.right_img > img {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+.right_text {
+    height: 10vh;
+    width: 500px;
+    margin-left: 54%;
+    margin-top: -2%;
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, cyan), color-stop(teal), color-stop(40%, cyan));
+    background: linear-gradient(to right, cyan 10%, teal, cyan 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes lefts {
+    100% {
+        left: 12%;
+    }
+}
+
+@keyframes lefts {
+    100% {
+        left: 12%;
+    }
+}
+
+@-webkit-keyframes rights {
+    100% {
+        right: 12.5%;
+    }
+}
+
+@keyframes rights {
+    100% {
+        right: 12.5%;
+    }
+}
+
+body {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.5)), color-stop(35%, rgba(9, 9, 121, 1)), to(rgba(0, 212, 255, 0.5)));
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 0.5) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section_padding {
+    margin: 20px 0;
+}
+
+#portfolio {
+    position: relative;
+    margin: 150px 0 0 0;
+    padding: 0 0 0 20px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.5)), color-stop(35%, rgba(9, 9, 121, 1)), to(rgba(0, 212, 255, 0.5)));
+    background: linear-gradient(to right, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 0.5) 100%);
+    overflow: hidden;
+}
+
+#portfolio > h1 {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    margin-bottom: 30px;
+
+}
+
+.port {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-row-gap: 20px;
+    width: 100%;
+}
+
+.image > img {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: 100%;
+}
+
+.active_port {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 350px;
+    opacity: 0;
+}
+
+.active_port:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .5);
+}
+
+.links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.links > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.links > a:hover {
+    color: orange;
+    text-shadow: 0 0 5px black;
+}
+
+#fot {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), color-stop(rgba(0, 0, 0, .6)), to(rgba(220, 220, 220, .6)));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, .6), rgba(220, 220, 220, .6));
+    overflow: hidden;
+}
+
+#fot > p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#fot > p > a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    display: inline-block;
+}
+
+@-webkit-keyframes a {
+    100% {
+        margin-top: -100px;
+    }
+}
+
+@keyframes a {
+    100% {
+        margin-top: -100px;
+    }
+}

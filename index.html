@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Dancing+Script:wght@700&family=Lobster&family=PT+Sans:wght@700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navlinks"><a class="jshover brand" href="#"><img src="https://image.shutterstock.com/image-vector/initial-letter-hp-logotype-company-260nw-713404501.jpg" alt="Brand Logo"><span class="brandspan">Brand Logo</span></a></div>
+        <div class="navlinks"><a class="jshover" href="#">Page</a></div>
+        <div class="navlinks"><a class="jshover" href="#">Page</a></div>
+        <div class="navlinks"><a class="jshover" href="#">Page</a></div>
+        <div class="navlinks"><a class="jshover" href="#">Page</a></div>
+        <div class="navlinks push"><a class="jshover" href="#">Page</a></div>
+    </nav>
+    <div class="sectionheader">
+        <h1>About Me</h1>
+    </div>
+    <section id="about">
+        <div id="left">
+            <h1 id="designation">I am <span id="text"></span></h1>
+        </div>
+        <div id="right">
+            <div class="right_img">
+                <img id="img" src="" alt="profile pic">
+            </div>
+            <div id="right_name" class="right_text">
+                <h1>Jhone Doe</h1>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section_padding">
+        <h1>My Activity</h1>
+        <div class="port">
+            <div class="active_port" id="a1">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="a2">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="a3">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="b1">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="b2">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="b3">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+            <div class="active_port" id="c1">
+                <div class="image"><img src="https://images.unsplash.com/photo-1584548417149-fdb65186fb14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt=""></div>
+                <div class="links">
+                    <a href="#">Project link</a>
+                    <a href="#" class="push">Github link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fot">
+        <p>&copy;copyright by MD. Nurul Huda Riyad <a class="push" href="https://github.com/gitriyad">Github</a><a href="https://web.facebook.com/riyad.nurulhuda">Facebook</a></p>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/divAnim.js"></script>
+    <script src="js/img_move.js"></script>
+    <script>
+        aboutDes("text");
+        divAnim("img");
+        img_move("a1", "left", 0);
+        img_move("a2", "top", 0.2);
+        img_move("a3", "right", 0.4);
+        img_move("b1", "left", 0.6);
+        img_move("b2", "bottom", 0.8);
+        img_move("b3", "right", 1);
+        img_move("c1", "left", 1.2);
+
+    </script>
+</body>
+
+</html>
